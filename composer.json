@@ -1,0 +1,41 @@
+{
+    "name": "gintonicweb/menus",
+    "description": "Menu library for CakePHP 3",
+    "type": "cakephp-plugin",
+    "homepage": "http://gintoniccms.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philippe Lafrance",
+            "homepage": "http://phillafrance.com",
+            "role": "Author"
+        },
+        {
+            "name": "GintonicWeb Contributors",
+            "homepage": "http://github.com/gintonicweb/GintonicCMS/graphs/contributors"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/gintonicweb/menus/issues",
+        "source": "https://github.com/gintonicweb/menus"
+    },
+    "require": {
+        "php": ">=5.4",
+        "cakephp/cakephp": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "cakephp/cakephp-codesniffer": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Menus\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests",
+            "Menus\\Test\\": "tests"
+        }
+    }
+}
