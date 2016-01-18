@@ -1,12 +1,12 @@
 <?php
 
-namespace Menu\Menu;
+namespace Menus\Menu;
 
 use Cake\Core\InstanceConfigTrait;
 use Cake\Network\Request;
 use Cake\Routing\Router;
 use Cake\View\StringTemplateTrait;
-use Menu\Menu\MenuGroup;
+use Menus\Menu\MenuGroup;
 
 class MenuContent
 {

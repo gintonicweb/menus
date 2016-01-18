@@ -1,10 +1,10 @@
 <?php
 
-namespace Menu\Menu;
+namespace Menus\Menu;
 
 use Cake\Core\InstanceConfigTrait;
 use Cake\View\StringTemplateTrait;
-use Menu\Menu\MenuWrapper;
+use Menus\Menu\MenuWrapper;
 
 class MenuGroup
 {

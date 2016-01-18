@@ -1,9 +1,9 @@
 <?php
 
-namespace Menu\View\Helper;
+namespace Menus\View\Helper;
 
 use Cake\View\Helper;
-use Menu\Menu\MenuGroup;
+use Menus\Menu\MenuGroup;
 
 class MenuHelper extends Helper
 {
