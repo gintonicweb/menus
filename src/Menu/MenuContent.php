@@ -28,7 +28,12 @@ class MenuContent
     protected $_active = false;
 
     /**
-     * TODO
+     * Construct a menu item content. Typicly this is the <a ..> tag inside
+     * the <li> elements.
+     *
+     * @param array $config Config options
+     * @param string $here the current active page
+     * @return void
      */
     public function __construct(array $config = [], $here = null)
     {
@@ -41,7 +46,11 @@ class MenuContent
     }
 
     /**
-     * TODO
+     * If the current menu item holds a submenu, we recursively build again a
+     * new menu group.
+     *
+     * @param array|null $group Current item's submenus array.
+     * @return string rendered menu content
      */
     public function render($group = null)
     {

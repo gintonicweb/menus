@@ -26,7 +26,12 @@ class MenuWrapper
     protected $_active;
 
     /**
-     * TODO
+     * The MenuWrapper is the top element for single menu item. Typically this
+     * is the <li> tag inside inside the wole menu <ul> and wrapping a single
+     * <a> item
+     *
+     * @param array $config Full config array for the wrapper and subcontent
+     * @param string $here current active url
      */
     public function __construct(array $config = [], $here = null)
     {
@@ -35,7 +40,10 @@ class MenuWrapper
     }
 
     /**
-     * TODO
+     * Renders the menu wrapper and it's content.
+     *
+     * @param array $data options and content of the wrapper
+     * @return string rendered wrapper
      */
     public function render($data)
     {

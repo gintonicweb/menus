@@ -25,7 +25,13 @@ class MenuGroup
     protected $_active = false;
 
     /**
-     * TODO
+     * The MenuGroup is the top container of a group of elements.
+     * It defines typicly the top <ul> of a menu. It's also called recursively
+     * for every ul nested in the menu.
+     *
+     * @param array $config Configuration array
+     * @param string $here Location of current page
+     * @return void
      */
     public function __construct(array $config = [], $here = null)
     {
@@ -38,7 +44,11 @@ class MenuGroup
     }
 
     /**
-     * TODO
+     * Renders the list of elements containd in the MenuGroup. Lets call them
+     * MenuWrappers. Typicly they are <li> elements.
+     *
+     * @param array $items list of items to be used as menu-wrappers.
+     * @return string formatted list of menu items.
      */
     public function render($items)
     {
